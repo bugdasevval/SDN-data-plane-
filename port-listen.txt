@@ -1,0 +1,4 @@
+LISTEN 0      50           0.0.0.0:6633      0.0.0.0:*    users:(("ryu-manager",pid=74746,fd=4))     
+LISTEN 0      50           0.0.0.0:6633      0.0.0.0:*    users:(("ryu-manager",pid=73774,fd=4))     
+LISTEN 0      50           0.0.0.0:6653      0.0.0.0:*    users:(("ryu-manager",pid=74746,fd=5))     
+LISTEN 0      50           0.0.0.0:6653      0.0.0.0:*    users:(("ryu-manager",pid=73774,fd=5))     

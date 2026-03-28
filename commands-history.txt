@@ -1,0 +1,200 @@
+   99  python3 -m ryu.cmd.manager controller/simple_switch.py
+  100  python3 -m ryu.cmd.manager controller/load_balancer.py
+  101  sudo python3 topology/topo.py
+  102  nano ryu_lb.py
+  103  python -m ryu.cmd.manager ryu_lb.py
+  104  sudo mn --controller=remote,ip=127.0.0.1,port=6653         --switch ovsk,protocols=OpenFlow13
+  105  python -m ryu.cmd.manager ryu/app/simple_switch_13.py
+  106  nano ryu_lb.py
+  107  python -m ryu.cmd.manager ryu_lb.py
+  108  touch controller_topo.py
+  109  nano controller_topo.py
+  110  ryu-manager ryu.app.simple_switch_13
+  111  pip show ryu
+  112  pip install ryu
+  113  python3 -m venv ryu-env
+  114  source ryu-env/bin/activate
+  115  pip show ryu
+  116  pip install ryu
+  117  ryu-manager controller_topo.py
+  118  sudo apt update
+  119  sudo apt install python3.10 python3.10-venv python3.10-distutils
+  120  sudo apt update
+  121  sudo apt install software-properties-common
+  122  sudo add-apt-repository ppa:deadsnakes/ppa
+  123  sudo apt update
+  124  sudo apt install python3.10 python3.10-venv python3.10-distutils
+  125  python3.10 --version
+  126  python3.10 -m venv ryu-env
+  127  source ryu-env/bin/activate
+  128  pip install --upgrade pip setuptools wheel
+  129  pip install ryu
+  130  sudo add-apt-repository ppa:deadsnakes/ppa
+  131  sudo apt update
+  132  sudo apt install python3.11 python3.11-venv python3.11-distutils
+  133  python3.11 -m venv ryu-env
+  134  source ryu-env/bin/activate
+  135  pip install "setuptools<66" wheel
+  136  pip install ryu
+  137  ryu-manager controller_topo.py
+  138  pip uninstall eventlet -y
+  139  pip install eventlet==0.30.2
+  140  ryu-manager controller_topo.py
+  141  pip uninstall eventlet -y
+  142  pip install eventlet==0.33.3
+  143  ryu-manager controller_topo.py
+  144  pip uninstall dnspython -y
+  145  pip install dnspython==1.16.0
+  146  ryu-manager controller_topo.py
+  147  deactivate
+  148  rm -rf ryu-env
+  149  python3.11 -m venv ryu-env
+  150  source ryu-env/bin/activate
+  151  pip install --upgrade pip
+  152  pip install "setuptools<66" wheel
+  153  pip install eventlet==0.33.3
+  154  pip install dnspython==1.16.0
+  155  pip install ryu
+  156  ryu-manager controller_topo.py
+  157  deactivate
+  158  rm -rf ryu-env
+  159  curl https://pyenv.run | bash
+  160  export PATH="$HOME/.pyenv/bin:$PATH"
+  161  eval "$(pyenv init -)"
+  162  eval "$(pyenv virtualenv-init -)"
+  163  pyenv install 3.10.12
+  164  python --version
+  165  # Python 3.10.12
+  166  pyenv global 3.10.12
+  167  nano controller_topo.py
+  168  ryu-manager ryu.app.simple_switch_13
+  169  sudo apt update
+  170  sudo apt install python3-pip git
+  171  pip3 install ryu
+  172  git clone https://github.com/faucetsdn/ryu.git
+  173  cd ryu
+  174  pip3 install .
+  175  sudo apt update
+  176  sudo apt install python3-ryu
+  177  sudo apt install python3-venv
+  178  python3 -m venv ryu-env
+  179  source ryu-env/bin/activate
+  180  pip install ryu
+  181  ryu-manager --version
+  182  sudo apt update
+  183  sudo apt install python3.10 python3.10-venv
+  184  python3.10 -m venv ryu-env
+  185  source ryu-env/bin/activate
+  186  pip install ryu
+  187  python3.10 -m venv ryu-env
+  188  source ryu-env/bin/activate
+  189  pip install ryu
+  190  pip install setuptools==59.5.0
+  191  pip install ryu
+  192  ryu-manager --version
+  193  pip install eventlet==0.30.2
+  194  ryu-manager --version
+  195  pip install eventlet==0.25.2
+  196  pip install greenlet==0.4.15
+  197  sudo apt install python3.10-dev
+  198  source ryu-env/bin/activate
+  199  pip install greenlet==0.4.15
+  200  sudo python3 controller_topo.py
+  201  cd ~
+  202  ryu-manager ryu.app.simple_switch_13
+  203  sudo python3 controller_topo.py
+  204  cd ~
+  205  mkdir mininet-project
+  206  cd mininet-project
+  207  nano controller_topo.py
+  208  ryu-manager ryu.app.simple_switch_13
+  209  python3.9 -m venv ryu39-env
+  210  source ryu39-env/bin/activate
+  211  pip install setuptools==59.5.0 wheel
+  212  pip install eventlet==0.25.2 greenlet==0.4.17
+  213  git clone https://github.com/faucetsdn/ryu.git
+  214  cd ryu
+  215  pip install .
+  216  ryu-manager --version
+  217  sudo apt update
+  218  sudo apt install python3.9 python3.9-venv python3.9-dev
+  219  python3.9 -m venv ryu39-env
+  220  source ryu39-env/bin/activate
+  221  pip install setuptools==59.5.0 wheel
+  222  pip install eventlet==0.25.2 greenlet==1.1.2
+  223  git clone https://github.com/faucetsdn/ryu.git
+  224  cd ryu
+  225  pip install .
+  226  ryu-manager --version
+  227  source ~/ryu39-env/bin/activate
+  228  ryu-manager ryu.app.simple_switch_13
+  229  sudo python3 controller_topo.py
+  230  source ~/ryu39-env/bin/activate
+  231  sudo python3 controller_topo.py
+  232  source ~/ryu39-env/bin/activate
+  233  ryu-manager ryu.app.simple_switch_13
+  234  source ~/ryu39-env/bin/activate
+  235  ryu-manager ryu.app.simple_switch_13
+  236  sudo python3 controller_topo.py
+  237  source ~/ryu39-env/bin/activate
+  238  ryu-manager ryu.app.simple_switch_13
+  239  nano controller_topo.py
+  240  sudo mn -c
+  241  source ~/ryu39-env/bin/activate
+  242  ryu-manager ryu.app.simple_switch_13
+  243  netstat -tlnp | grep ryu
+  244  sudo netstat -tlnp | grep ryu
+  245  source ~/ryu39-env/bin/activate
+  246  ryu-manager ryu.controller.ofp_handler ryu.app.simple_switch_13
+  247  source ~/ryu39-env/bin/activate
+  248  ryu-manager ryu.controller.ofp_handler ryu.app.simple_switch_13
+  249  sudo netstat -tlnp | grep 6653
+  250  sudo mn -c
+  251  sudo python3 controller_topo.py
+  252  sudo netstat -tlnp | grep 6653
+  253  nano controller_topo.py
+  254  sudo python3 controller_topo.py
+  255  sudo mn-c
+  256  sudo mn -c
+  257  sudo python3 controller_topo.py
+  258  sudo mn -c
+  259  sudo python3 controller_topo.py
+  260  sudo mn -c
+  261  sudo python3 controller_topo.py
+  262  sudo netstat -tlnp | grep 6653
+  263  source ~/ryu39-env/bin/activate
+  264  ryu-manager ryu.controller.ofp_handler ryu.app.simple_switch_13
+  265  source ~/ryu39-env/bin/activate
+  266  ryu-manager ryu.controller.ofp_handler ryu.app.simple_switch_13 > ryu.log 2>&1 &
+  267  sudo mn -c
+  268  source ~/ryu39-env/bin/activate
+  269  ryu-manager ryu.controller.ofp_handler ryu.app.simple_switch_13 > ryu.log 2>&1 &
+  270  mkdir -p ~/ryu-mininet-export
+  271  cd ~/ryu-mininet-export
+  272  sudo ss -ltnp | egrep '6633|6653' > port-listen.txt 2>&1
+  273  sudo ovs-vsctl show > ovs-vsctl-show.txt 2>&1
+  274  sudo ovs-ofctl show s1 > ovs-ofctl-show-s1.txt 2>&1
+  275  tail -n 500 ~/ryu-mininet-export/ryu.log 2>/dev/null || true
+  276  cp ~/controller_topo.py . 2>/dev/null || true
+  277  cp ~/controller_topo.py ./controller_topo.py 2>/dev/null || true
+  278  cp ~/ryu.log ./ryu.log 2>/dev/null || true
+  279  sudo find / -type f -name 'ryu.log' 2>/dev/null | head -n 20 | xargs -I{} sudo cp {} ./ryu.log 2>/dev/null || true
+  280  sudo ovs-vsctl show > ovs-vsctl-show.txt 2>&1
+  281  sudo ovs-ofctl show s1 > ovs-ofctl-show-s1.txt 2>&1
+  282  sh ovs-ofctl dump-flows s1 > flows.txt 2>&1
+  283  sh ovs-vsctl get-controller s1 > controller-info.txt 2>&1
+  284  sudo ovs-vsctl show > ovs-vsctl-show.txt 2>&1
+  285  sudo ovs-ofctl show s1 > ovs-ofctl-show-s1.txt 2>&1
+  286  # Host arayüzleri
+  287  h1 ifconfig -a > h1-ifconfig.txt 2>&1
+  288  h2 ifconfig -a > h2-ifconfig.txt 2>&1
+  289  h3 ifconfig -a > h3-ifconfig.txt 2>&1
+  290  # Ping testleri (örnek)
+  291  h1 ping -c 3 10.0.0.2 > h1-to-h2-ping.txt 2>&1
+  292  h1 ping -c 3 10.0.0.3 > h1-to-h3-ping.txt 2>&1
+  293  h3 ping -c 3 10.0.0.1 > h3-to-h1-ping.txt 2>&1
+  294  # Ryu logunun son kısmını al
+  295  sudo tail -n 500 ~/ryu.log > ryu-log-tail.txt 2>/dev/null || true
+  296  sudo tail -n 500 ./ryu.log > ryu-log-tail.txt 2>/dev/null || true
+  297  # Son komutlar
+  298  history | tail -n 200 > commands-history.txt
