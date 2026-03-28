@@ -185,16 +185,12 @@
   283  sh ovs-vsctl get-controller s1 > controller-info.txt 2>&1
   284  sudo ovs-vsctl show > ovs-vsctl-show.txt 2>&1
   285  sudo ovs-ofctl show s1 > ovs-ofctl-show-s1.txt 2>&1
-  286  # Host arayüzleri
-  287  h1 ifconfig -a > h1-ifconfig.txt 2>&1
-  288  h2 ifconfig -a > h2-ifconfig.txt 2>&1
-  289  h3 ifconfig -a > h3-ifconfig.txt 2>&1
-  290  # Ping testleri (örnek)
-  291  h1 ping -c 3 10.0.0.2 > h1-to-h2-ping.txt 2>&1
-  292  h1 ping -c 3 10.0.0.3 > h1-to-h3-ping.txt 2>&1
-  293  h3 ping -c 3 10.0.0.1 > h3-to-h1-ping.txt 2>&1
-  294  # Ryu logunun son kısmını al
-  295  sudo tail -n 500 ~/ryu.log > ryu-log-tail.txt 2>/dev/null || true
-  296  sudo tail -n 500 ./ryu.log > ryu-log-tail.txt 2>/dev/null || true
-  297  # Son komutlar
-  298  history | tail -n 200 > commands-history.txt
+  286  h1 ifconfig -a > h1-ifconfig.txt 2>&1
+  287  h2 ifconfig -a > h2-ifconfig.txt 2>&1
+  288  h3 ifconfig -a > h3-ifconfig.txt 2>&1
+  289  h1 ping -c 3 10.0.0.2 > h1-to-h2-ping.txt 2>&1
+  290  h1 ping -c 3 10.0.0.3 > h1-to-h3-ping.txt 2>&1
+  291  h3 ping -c 3 10.0.0.1 > h3-to-h1-ping.txt 2>&1
+  292  sudo tail -n 500 ~/ryu.log > ryu-log-tail.txt 2>/dev/null || true
+  293  sudo tail -n 500 ./ryu.log > ryu-log-tail.txt 2>/dev/null || true
+  294  history | tail -n 200 > commands-history.txt
